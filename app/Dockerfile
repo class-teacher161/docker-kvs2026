@@ -1,5 +1,6 @@
 From python:3.7.5-slim
-RUN pip install flask==1.1.1 redis==3.3.8
+# RUN pip install flask==1.1.1 redis==3.3.8
+RUN pip install flask==1.1.4 Jinja2==3.0.3 Werzeug==2.0.3 markupsafe==2.0.1 redis
 WORKDIR /src
 COPY ./src/server.py /src/
 ENV PORT 80

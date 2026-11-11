@@ -9,7 +9,8 @@ services:
     ports:
       - 80:80
     environment:
-      APP_SERVER: http://app:80
+      # APP_SERVER: http://app:80
+      APP_SERVER: http://app:5000
   app:
     image: ${DOCKERHUB_USER}/dockerkvs_app:${BUILD_TIMESTAMP}
     container_name: dockerkvs_app
